@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.1.2'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -37,19 +37,4 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'mysql2'
-gem 'simple_form'
-
-group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_21]
-  gem 'hub', :require=>nil
-  gem 'quiet_assets'
-  gem 'rails_apps_pages'
-  gem 'rails_layout'
-end
 
