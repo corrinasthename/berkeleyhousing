@@ -4,5 +4,5 @@ class AptListing < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :user
-  validates :address, :dates, presence: true
+  validates :address, presence: true
 end

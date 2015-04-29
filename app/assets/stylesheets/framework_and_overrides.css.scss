@@ -92,6 +92,24 @@ section {
     background-size:     cover;
 }
 
+.text {
+  color: white;
+  font-family: Calibri;
+  font-size: 50px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.main {
+  background-image:url('http://isf.ugis.berkeley.edu/sites/default/files/styles/nivo/public/uc-berkeley.jpg?itok=xSC1b4fn');
+}
+
+#postingPage {
+  background: black;
+}
+
 #frost {
    position: absolute;
     left: 10px;

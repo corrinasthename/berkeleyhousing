@@ -5,9 +5,8 @@ class SublistingsController < ApplicationController
   #   @users = User.all
   # end
 
-  def show_sublistings
-    @sub_listing = SubListing.all #figure out how to send bed in params
-    @sublistings = SubListing.all
+  def show
+    @sublisting = SubListing.all
     # unless @user == current_user
       # redirect_to :back, :alert => "Access denied."
     # end
@@ -18,16 +17,17 @@ class SublistingsController < ApplicationController
   end
 
   def create
-    @sub_listing = SubListing.create(sub_params) #figure out how to save subletting parameters
-    if @sub_listing.save #If saving the user was successful
-      redirect_to @sub_listing #Go to the show view of the user
+    @sublisting = SubListing.create(sub_params) #figure out how to save subletting parameters
+    if @sublisting.save #If saving the user was successful
+      redirect_to sub_listings_path #Go to all sublease listings
     else
-      render "new" #Go to the new view for the user
+      redirect_to sub_listings_path
+      # render "new" #Go to the new view for the user
     end
   end  
 
   def roomie
-    @sub_listing = SubListing.all
+    @sublisting = SubListing.all
   end
 
   private

@@ -1,7 +1,7 @@
 
 <%= @sublistings %>
 <h3>Subleasing Listings</h3>
-  <a href= "www.facebook.com"><img src="http://media-cdn.tripadvisor.com/media/photo-s/02/f5/c5/af/inside-barcelona-apartments.jpg" width = "250" height = "100"></a>
+  <img src="http://media-cdn.tripadvisor.com/media/photo-s/02/f5/c5/af/inside-barcelona-apartments.jpg" width = "250" height = "100">
 
   <img src="http://blog.admissions.berkeley.edu/wp-content/uploads/2014/12/artech-after.jpg"  width = "250" height = "100">
 
@@ -14,4 +14,12 @@
   <img src="http://thumbs.trulia-cdn.com/pictures/thumbs_3/ps.70/b/d/1/e/picture-uh=a577215e2ca62920e5a4fb6c3f63bce6-ps=bd1ef439902840f3fdbb3a66f69d17c3.jpg" width = "250" height = "100">
 
 
-
+<% @sublisting.each do |u| %>   
+<h2>Sublease :
+  <p>Address: <%= u.address if u.address %></p>
+<p>Beds: <%= u.rooms if u.rooms %></p>
+<p>Baths: <%= u.baths if u.baths %></p>
+<p>Lease Start Date: <%= u.date if u.date %></p>
+<p>Things to Know: <%= u.details if u.details %></p>
+<p>—————</p>
+<% end %>
