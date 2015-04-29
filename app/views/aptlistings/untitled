@@ -1,0 +1,7 @@
+<h3>Listings</h3>
+<p>Address: <%= @sub_listing.address if @sub_listing.address %></p>
+<p>Beds: <%= @sub_listing.rooms if @sub_listing.rooms %></p>
+<p>Baths: <%= @sub_listing.baths if @sub_listing.baths %></p>
+<p>Lease Start Date: <%= @sub_listing.date if @sub_listing.date %></p>
+<p>Gender: <%= @sub_listing.gender if @sub_listing.gender %></p>
+<p>Things to Know: <%= @sub_listing.details if @sub_listing.details %></p>

@@ -1,0 +1,16 @@
+<h1>Create New Apartment Listing!!</h1>
+  <%= form_for @aptlisting do |f| %> <!-- Create form for user object -->
+    Address: <%= f.text_field :address %><br>
+    Rooms (put number): <%= f.number_field :rooms %><br>
+    Baths (put number): <%= f.number_field :baths %><br>
+    Starting Lease Date: <%= f.text_field :date %><br>
+    Price: <%= f.number_field :price %><br>
+    Other Details to Know: <%= f.text_field :details %>
+    <%= f.submit %> <!-- Create submit button-->
+  <% end %><br><br>
+
+
+  
+<img src = "https://scontent-sjc.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/11159518_893003047402269_3892198400345350505_n.jpg?oh=15d79082de1e0544c90363b795cdc42b&oe=55D42A90" width = "200">
+
+
