@@ -10,7 +10,10 @@ Rails.application.routes.draw do
 
   get "apt_listings", to: "aptlistings#show" #correct
   get "sub_listings", to: "sublistings#show" #correct
-  
+
   get "sub_listings/roomie", to: "sublistings#roomie"
+
+  get "all_listings", to: "users#all"
+  get "post_listings", to: "users#choose"
   # post 'newlisting', to: 'aptlistings#show'
 end

@@ -12,4 +12,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def all
+    @sub_listing = SubListing.all
+    @apt_listing = AptListing.all
+  end
+
+  def choose
+  end
+  
+
 end

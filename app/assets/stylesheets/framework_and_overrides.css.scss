@@ -101,19 +101,4 @@ section {
     background: rgba(255,255,255,.4);    
 }
 
-#background {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 600px;
-    height: 600px;
-
-    background-image: url(http://placekitten.com/200/300);
-
-    -webkit-filter  : blur(8px);
-    -moz-filter : blur(8px);
-    -ms-filter  : blur(8px);
-    -o-filter   : blur(8px);
-    filter      : blur(8px);
-}
 

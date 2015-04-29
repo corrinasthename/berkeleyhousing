@@ -3,6 +3,5 @@ class AptListing < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  # belongs_to :user
   validates :address, :date, :price, presence: true
 end

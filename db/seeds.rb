@@ -34,6 +34,7 @@ puts 'CREATED ADMIN USER: ' << user.email
   User.create name: "Jane Doe", year: "Junior", email: email, password: 'password'
 end
 
+
 # Make listings
 %w("2527 Dwight Way" "3243 Shattuck Ave" "2335 Dwight Way").each do |address|
   SubListing.create address: address, date: 'June 1st'

@@ -32,7 +32,7 @@ class SublistingsController < ApplicationController
 
   private
   def sub_params
-    params.require(:sub_listing).permit(:address, :price, :date, :zipcode, :rooms, :baths, :details)
+    params.require(:sub_listing).permit(:address, :price, :date, :zipcode, :rooms, :baths, :details, :gender)
   end  
 
 end
