@@ -1,24 +1,34 @@
-<h1>Are you looking to sublease or find an apartment?</h1>
-<%= link_to "Sublease", apt_listings_path %><br>
-<%= link_to "Apartment", sub_listings_path %>
+<div class="all"
 
-<h1>All Listings</h1>
+<p>
+<%= button_to "Just looking to Sublease?", sub_listings_path, :class => "button medium", :method => :get %>
+<%= button_to "Just looking for Apartment Listings?", apt_listings_path, :class => "button medium", :method => :get %>
+
+
+<br><br>
+
 <% @apt_listing.each do |u| %> 
 <h2>Apartments :
  Address: <%= u.address if u.address %></p>
+ <p>Price: <%= u.price if u.price %> </p>
 <p>Beds: <%= u.rooms if u.rooms %></p>
 <p>Baths: <%= u.baths if u.baths %></p>
 <p>Lease Start Date: <%= u.date if u.date %></p>
 <p>Things to Know: <%= u.details if u.details %></p>
+<%= link_to "Contact User", contact_path %>
 <p>—————</p>
 <% end %>
 
 <% @sub_listing.each do |u| %>   
 <h2>Sublease :
   <p>Address: <%= u.address if u.address %></p>
+  <p>Price: <%= u.price if u.price %> </p>
 <p>Beds: <%= u.rooms if u.rooms %></p>
 <p>Baths: <%= u.baths if u.baths %></p>
 <p>Lease Start Date: <%= u.date if u.date %></p>
 <p>Things to Know: <%= u.details if u.details %></p>
+<%= link_to "Contact User", contact_path %>
 <p>—————</p>
 <% end %>
+
+</div>

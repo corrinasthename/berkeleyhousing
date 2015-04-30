@@ -84,12 +84,17 @@ section {
 
 .img {
     position: relative;
+    display: in-line;
     float: left;
     width:  100px;
     height: 100px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
+}
+
+.newlisting {
+    background: pink;
 }
 
 .text {
@@ -106,9 +111,23 @@ section {
   background-image:url('http://isf.ugis.berkeley.edu/sites/default/files/styles/nivo/public/uc-berkeley.jpg?itok=xSC1b4fn');
 }
 
-#postingPage {
-  background: black;
+.show {
+  background-color:gray;
 }
+
+.all {
+  background-image:url('http://www.pulsarwallpapers.com/data/media/3/Alien%20Ink%202560X1600%20Abstract%20Background.jpg');
+  font-family: Calibri;
+  text-align: center;
+}
+
+.postings {
+  font-family: Calibri;
+}
+
+.form {
+ font-family: Calibri;
+ }
 
 #frost {
    position: absolute;

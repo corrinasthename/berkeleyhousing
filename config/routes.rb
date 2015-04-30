@@ -15,5 +15,7 @@ Rails.application.routes.draw do
 
   get "all_listings", to: "users#all"
   get "post_listings", to: "users#choose"
+  get "contact", to: "users#contact"
+  post "contact", to: "users#message1"
   # post 'newlisting', to: 'aptlistings#show'
 end

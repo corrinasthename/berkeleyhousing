@@ -20,6 +20,7 @@ class AptlistingsController < ApplicationController
   def create
     @aptlisting = AptListing.create(apt_params)
     if @aptlisting.save #If saving the user was successful
+      @aptlisting.user = current_user
       redirect_to apt_listings_path #Go to view of all apt listings
     else
       redirect_to apt_listings_path #Go to the new view for the user

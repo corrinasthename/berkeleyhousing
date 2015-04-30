@@ -19,6 +19,7 @@ class SublistingsController < ApplicationController
   def create
     @sublisting = SubListing.create(sub_params) #figure out how to save subletting parameters
     if @sublisting.save #If saving the user was successful
+      @sublisting.user = current_user
       redirect_to sub_listings_path #Go to all sublease listings
     else
       redirect_to sub_listings_path

@@ -20,5 +20,12 @@ class UsersController < ApplicationController
   def choose
   end
   
+  def contact
+    @user = current_user
+  end
+
+  def message1
+    redirect_to all_listings_path
+  end
 
 end

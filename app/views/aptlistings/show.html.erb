@@ -1,3 +1,5 @@
+<div class="show"
+
 <h3>Apartment Listings</h3>
 
   <img src="http://media-cdn.tripadvisor.com/media/photo-s/02/f5/c5/af/inside-barcelona-apartments.jpg" width = "250" height = "100">
@@ -15,9 +17,13 @@
 <% @aptlisting.each do |u| %> 
 <h2>Apartments :
   <p>Address: <%= u.address if u.address %></p>
+  <p>Price :  <%= u.price if u.price %></p>
 <p>Beds: <%= u.rooms if u.rooms %></p>
 <p>Baths: <%= u.baths if u.baths %></p>
 <p>Lease Start Date: <%= u.date if u.date %></p>
 <p>Things to Know: <%= u.details if u.details %></p>
+<%= link_to "Contact User", contact_path %>
 <p>—————</p>
 <% end %>
+
+</div>

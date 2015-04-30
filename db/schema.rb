@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150429090224) do
+ActiveRecord::Schema.define(version: 20150430011514) do
 
   create_table "apt_listings", force: true do |t|
     t.string   "address"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150429090224) do
     t.datetime "updated_at"
     t.decimal  "price"
     t.string   "email"
+    t.integer  "user_id"
   end
 
   create_table "listings", force: true do |t|
@@ -48,6 +49,7 @@ ActiveRecord::Schema.define(version: 20150429090224) do
     t.datetime "updated_at"
     t.decimal  "price"
     t.string   "email"
+    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|
