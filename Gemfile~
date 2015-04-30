@@ -21,7 +21,7 @@ group :development do
   gem 'rails_layout'
   gem 'taps'
   gem 'rvm'
-  gem 'pg'
+  gem 'sqlite3'
 end
 
 

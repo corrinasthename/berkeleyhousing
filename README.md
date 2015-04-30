@@ -1,48 +1,46 @@
-Rails Devise
-================
+Title: RailsDeCal
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+Team Members: Corrina Calanoc, Tanya Krishnakumar
 
-Rails Composer is open source and supported by subscribers. Please join RailsApps to support development of Rails Composer.
+Demo Link: railsdecal.com
 
-Problems? Issues?
------------
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+Idea: An application where people can find/post information on housing available.
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
 
-Ruby on Rails
--------------
 
-This application requires:
+Models and Description:
 
-- Ruby 2.1.2
-- Rails 4.1.6
+User
 
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
+has name, email
+Apartment listing or subletter listing belongs to User
+Apartment Listing
 
-Getting Started
----------------
+has name of User, price, dates, gender, other details regarding housing
+Sublet Listing
 
-Documentation and Support
--------------------------
+has name of User, price, dates, gender, other details regarding housing
 
-Issues
--------------
 
-Similar Projects
-----------------
+Features:
 
-Contributing
-------------
+Users can log in
+Users can post about subletting 
+Users can find apartments
+Users can take a roommate matching test to see who they’re compatible with
+Users can edit their profile
 
-Credits
--------
 
-License
--------
+Division of Labor:
+
+Individually:
+
+Corrina: Made models/app
+Tanya: Style/Design
+
+
+Together:
+
+Controllers, Views, 
